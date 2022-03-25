@@ -12,5 +12,5 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use "Pocco81/AutoSave.nvim"
+  use 'Pocco81/AutoSave.nvim'
 end)
