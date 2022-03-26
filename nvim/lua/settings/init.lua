@@ -25,13 +25,17 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
+-- If YOU DO NOT HAVE GITSIGNS INSTALLED:
 -- Display LSP errors in the place of line numbers, instead of
 -- making second column and shifting vim to the right.
-if vim.fn.has("nvim-0.5.0") or vim.fn.has("patch-8.1.1564") then
-  set.signcolumn = "number"
-else
-  set.signcolumn = "yes"
-end
+--  if vim.fn.has("nvim-0.5.0") or vim.fn.has("patch-8.1.1564") then
+--    set.signcolumn = "number"
+--  else
+--    set.signcolumn = "yes"
+--  end
+--
+--  ELSE:
+set.signcolumn = "yes"
 
 -- Autosave plugin config
 local autosave = require("autosave")

@@ -1,6 +1,6 @@
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  use 'olimorris/onedarkpro.nvim'
+  use 'marko-cerovac/material.nvim'
   use 'jiangmiao/auto-pairs'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin

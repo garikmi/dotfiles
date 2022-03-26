@@ -1,5 +1,5 @@
 require('settings')
-require('colorscheme-config.onedarkpro')
+require('colorscheme-config.material')
 require('lualine-config')
 require('packer-config')
 require('mappings')
