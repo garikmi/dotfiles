@@ -2,6 +2,9 @@
 alias vim="nvim"
 alias vi="nvim"
 
+# Remove vim mode esc time out
+KEYTIMEOUT=1
+
 # Enable vi mode
 bindkey -v
 
