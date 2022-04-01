@@ -15,4 +15,5 @@ require('packer').startup(function()
   use 'Pocco81/AutoSave.nvim'
   use 'lewis6991/gitsigns.nvim'
   use 'onsails/lspkind-nvim'
+  use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
 end)

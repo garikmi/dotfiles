@@ -7,3 +7,7 @@ vim.g.AutoPairsShortcutToggle = ''
 
 -- Space-u to toggle Navigation Siderbar
 map('n', '<leader>u', ':NvimTreeToggle<CR>', opts)
+
+-- Telescope
+map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
+map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
