@@ -14,4 +14,5 @@ require('packer').startup(function()
   use 'nvim-lualine/lualine.nvim'
   use 'Pocco81/AutoSave.nvim'
   use 'lewis6991/gitsigns.nvim'
+  use 'onsails/lspkind-nvim'
 end)
