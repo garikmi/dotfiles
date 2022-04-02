@@ -47,7 +47,7 @@ local enhance_server_opts = {
     opts.settings = {
       Lua = {
         diagnostics = {
-          globals = {'vim'}
+          globals = {'vim', 'P', 'use'}
         }
       }
     }
