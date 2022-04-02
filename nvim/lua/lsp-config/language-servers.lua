@@ -43,12 +43,13 @@ for _, name in pairs(servers) do
 end
 
 local enhance_server_opts = {
-  -- Provide settings that should only apply to the "eslintls" server
-  ["eslintls"] = function(opts)
+  ["sumneko_lua"] = function(opts)
     opts.settings = {
-      format = {
-        enable = true,
-      },
+      Lua = {
+        diagnostics = {
+          globals = {'vim'}
+        }
+      }
     }
   end,
 }
