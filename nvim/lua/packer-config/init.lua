@@ -16,4 +16,5 @@ require('packer').startup(function()
   use 'lewis6991/gitsigns.nvim'
   use 'onsails/lspkind-nvim'
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
+  use 'terrortylor/nvim-comment'
 end)
