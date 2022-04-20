@@ -1,6 +1,5 @@
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  use 'marko-cerovac/material.nvim'
   use 'jiangmiao/auto-pairs'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
@@ -13,8 +12,10 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'Pocco81/AutoSave.nvim'
-  use 'lewis6991/gitsigns.nvim'
   use 'onsails/lspkind-nvim'
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
   use 'terrortylor/nvim-comment'
+  use 'nanotee/luv-vimdocs'
+  use 'milisims/nvim-luaref'
+  use 'sainnhe/sonokai'
 end)
