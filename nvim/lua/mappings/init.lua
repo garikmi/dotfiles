@@ -11,3 +11,7 @@ map('n', '<leader>u', ':NvimTreeToggle<CR>', opts)
 -- Telescope
 map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
 map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
+map('n', '<leader>ft', ':Telescope help_tags<CR>', opts)
+
+-- Reload luafile
+map('n', '<leader>r', ':luafile %<CR>', opts)
