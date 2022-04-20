@@ -1,5 +1,4 @@
 local lualine = require('lualine')
-
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
@@ -78,9 +77,9 @@ end
 
 ins_left {
   function()
-    return '▊'
+    return ' '
   end,
-  color = { fg = colors.blue }, -- Sets highlighting of component
+  -- color = { fg = colors.blue }, -- Sets highlighting of component
   padding = { left = 0, right = 1 }, -- We don't need space before this
 }
 
@@ -153,27 +152,6 @@ ins_left {
   end,
 }
 
---ins_left {
---  -- Lsp server name .
---  function()
---    local msg = 'No Active Lsp'
---    local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
---    local clients = vim.lsp.get_active_clients()
---    if next(clients) == nil then
---      return msg
---    end
---    for _, client in ipairs(clients) do
---      local filetypes = client.config.filetypes
---      if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
---        return client.name
---      end
---    end
---    return msg
---  end,
---  icon = ' LSP:',
---  color = { fg = '#ffffff', gui = 'bold' },
---}
-
 -- Add components to right sections
 ins_right {
   'o:encoding', -- option component same as &encoding in viml
@@ -209,10 +187,11 @@ ins_right {
 
 ins_right {
   function()
-    return '▊'
+    return ' '
   end,
-  color = { fg = colors.blue },
-  padding = { left = 1 },
+  -- color = { fg = colors.blue },
+  -- padding = { left = 1 },
+  padding = { left = 0, right = 0 }, -- We don't need space before this
 }
 
 -- Now don't forget to initialize lualine
