@@ -19,6 +19,7 @@ set.ignorecase = true
 set.incsearch = true
 set.timeoutlen = 1000
 set.ttimeoutlen = 0
+set.statusline = "3"
 
 -- LSP Diagnostics/Errors icons
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
