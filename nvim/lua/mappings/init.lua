@@ -1,20 +1,19 @@
-local map = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
-
+-- Map leader key to space
 vim.g.mapleader = ' '
+
 -- Disable AutoPairs toggle from Esc-p to avoid accidental toggling
 vim.g.AutoPairsShortcutToggle = ''
 
 -- Space-u to toggle Navigation Sidebar
-map('n', '<leader>u', ':NvimTreeToggle<CR>', opts)
+vim.keymap.set('n', '<leader>u', ':NvimTreeToggle<CR>')
 
 -- Telescope
-map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
-map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
-map('n', '<leader>ft', ':Telescope help_tags<CR>', opts)
+vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
+vim.keymap.set('n', '<leader>fg', ':Telescope live_grep<CR>')
+vim.keymap.set('n', '<leader>ft', ':Telescope help_tags<CR>')
 
 -- Reload luafile
-map('n', '<leader>r', ':luafile %<CR>', opts)
+vim.keymap.set('n', '<leader>r', ':luafile %<CR>')
 
 -- Vimtex compile
-map('n', '<leader>t', ':VimtexCompile<CR>', opts)
+vim.keymap.set('n', '<leader>t', ':VimtexCompile<CR>')
