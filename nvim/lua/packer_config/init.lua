@@ -18,4 +18,5 @@ require('packer').startup(function()
   use 'nanotee/luv-vimdocs'
   use 'milisims/nvim-luaref'
   use 'sainnhe/sonokai'
+  use 'lervag/vimtex'
 end)
