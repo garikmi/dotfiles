@@ -1,5 +1,5 @@
 require('settings')
-require('colorscheme_config.sonokai')
+require('colorscheme_config.rose_pine')
 require('lualine_config')
 require('packer_config')
 require('mappings')

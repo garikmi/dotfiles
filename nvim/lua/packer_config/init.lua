@@ -17,6 +17,6 @@ require('packer').startup(function()
   use 'terrortylor/nvim-comment'
   use 'nanotee/luv-vimdocs'
   use 'milisims/nvim-luaref'
-  use 'sainnhe/sonokai'
   use 'lervag/vimtex'
+  use 'rose-pine/neovim'
 end)
