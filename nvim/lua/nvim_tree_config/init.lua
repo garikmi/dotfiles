@@ -6,8 +6,7 @@ require'nvim-tree'.setup {
   }
 }
 
--- CascadiaCode Patched Nerd Font for icon suppot
--- https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/CascadiaCode
+-- Icons
 vim.g.nvim_tree_icons = {
   default = '',
   symlink = '',
