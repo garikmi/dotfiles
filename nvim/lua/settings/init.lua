@@ -1,5 +1,5 @@
 set = vim.opt
--- set.termguicolors = true
+set.termguicolors = true
 set.writebackup = false
 set.swapfile = false
 set.number = true
@@ -9,7 +9,7 @@ set.shiftwidth = 2
 set.softtabstop = 2
 set.autoindent = true
 set.smarttab = true
-set.mouse = "a"
+set.mouse = 'a'
 set.wrap = true
 set.cursorline = true
 set.scrolloff = 5
@@ -19,7 +19,7 @@ set.ignorecase = true
 set.incsearch = true
 set.timeoutlen = 1000
 set.ttimeoutlen = 0
-set.statusline = "3"
+set.statusline = '3'
 
 -- LSP Diagnostics/Errors icons
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
