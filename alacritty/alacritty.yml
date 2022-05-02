@@ -67,6 +67,10 @@ colors:
     magenta: "0xc4a7e7"
     cyan: "0xebbcba"
     white: "0xe0def4"
+
 selection:
   save_to_clipboard: true
 live_config_reload: true
+
+env:
+  TERM: xterm-256color
