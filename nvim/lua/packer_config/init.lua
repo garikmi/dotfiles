@@ -10,7 +10,6 @@ require('packer').startup(function()
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons'
-  use 'nvim-lualine/lualine.nvim'
   use 'Pocco81/AutoSave.nvim'
   use 'onsails/lspkind-nvim'
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
@@ -19,4 +18,5 @@ require('packer').startup(function()
   use 'milisims/nvim-luaref'
   use 'lervag/vimtex'
   use 'rose-pine/neovim'
+  use 'tamton-aquib/staline.nvim'
 end)

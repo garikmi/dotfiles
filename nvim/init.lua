@@ -1,6 +1,6 @@
 require('settings')
 require('colorscheme_config.rose_pine')
-require('lualine_config')
+require('staline_config')
 require('packer_config')
 require('mappings')
 require('lsp_config.language_servers')
