@@ -1,4 +1,4 @@
-require('packer').startup(function()
+require('packer').startup({function()
   use 'wbthomason/packer.nvim'
   use 'jiangmiao/auto-pairs'
   use 'neovim/nvim-lspconfig'
@@ -19,4 +19,11 @@ require('packer').startup(function()
   use 'lervag/vimtex'
   use 'rose-pine/neovim'
   use 'tamton-aquib/staline.nvim'
-end)
+end,
+config = {
+  display = {
+    open_fn = function()
+      return require('packer.util').float({ border = 'single' })
+    end
+  }
+}})
