@@ -38,8 +38,8 @@ colors:
     foreground: "0xe0def4"
   cursor:
     text: "0x191724"
-    # cursor: "0x796268"
-    cursor: "#eb6f92"
+    cursor: "#9ccfd8"
+    # cursor: "#eb6f92"
   vi_mode_cursor:
     text: "0x191724"
     cursor: "0x796268"
