@@ -19,7 +19,7 @@ require('packer').startup({function()
   use 'lervag/vimtex'
   use 'rose-pine/neovim'
   use 'tamton-aquib/staline.nvim'
-  use {  'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use { 'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim' }
 end,
 config = {
   display = {
