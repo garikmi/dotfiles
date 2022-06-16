@@ -6,13 +6,11 @@ alias vi="nvim"
 # Remove vim mode esc time out
 KEYTIMEOUT=0
 
+# bindkey -v
+
 # Vim mode plugin
 # https://github.com/jeffreytse/zsh-vi-mode
 source "$HOME/.config/zsh_plugins/zsh_vi_mode/zsh-vi-mode.plugin.zsh"
-
-# Augosuggestions plugin
-# https://github.com/zsh-users/zsh-autosuggestions
-source "$HOME/.config/zsh_plugins/zsh_autosuggestions/zsh-autosuggestions.zsh"
 
 # Custom zsh theme
 # inspired by jovial zsh theme: https://github.com/zthxxx/jovial
