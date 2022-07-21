@@ -1,7 +1,4 @@
 window:
-  # padding:
-  #   x: 16
-  #   y: 16
   padding:
     x: 4
     y: 4
@@ -13,18 +10,6 @@ scrolling:
   multiplier: 3
 
 font:
-  # normal:
-  #   family: SFMono Nerd Font
-  #   style: Regular
-  # bold:
-  #   family: SFMono Nerd Font
-  #   style: Bold
-  # italic:
-  #   family: SFMono Nerd Font
-  #   style: Italic
-  # bold_italic:
-  #   family: SFMono Nerd Font
-  #   style: Bold Italic
   normal:
     family: CaskaydiaCove Nerd Font Mono
     style: Regular
@@ -48,21 +33,20 @@ font:
 
 colors:
   primary:
-    background: "0x191724"
-    foreground: "0xe0def4"
+    background: "#0D1117"
+    foreground: "#A9B2C3"
   cursor:
-    text: "0x191724"
-    cursor: "#9ccfd8"
-    # cursor: "#eb6f92"
+    text: "#0D1117"
+    cursor: "#C6CCD7"
   vi_mode_cursor:
-    text: "0x191724"
-    cursor: "0x796268"
+    text: "#0D1117"
+    cursor: "#C6CCD7"
   line_indicator:
     foreground: None
     background: None
   selection:
     text: CellForeground
-    background: "0x2A2738"
+    background: "#40454f"
   normal:
     black: "0x6e6a86"
     red: "0xeb6f92"
@@ -84,7 +68,9 @@ colors:
 
 selection:
   save_to_clipboard: true
+
 live_config_reload: true
 
 env:
   TERM: xterm-256color
+

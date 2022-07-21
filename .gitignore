@@ -1,8 +1,2 @@
-htop/
-btop/
-neofetch/
-ranger/
-ytmdl/
-zsh_plugins/
-nvim/plugin
-karabiner/
+/.DS_Store
+/zsh_plugins

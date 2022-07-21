@@ -19,7 +19,7 @@ set.ignorecase = true
 set.incsearch = true
 set.timeoutlen = 1000
 set.ttimeoutlen = 0
-set.laststatus = 3 -- global status line
+set.statusline = '3'
 set.clipboard = 'unnamed'
 
 -- LSP Diagnostics/Errors icons
@@ -37,3 +37,20 @@ else
   set.signcolumn = 'yes'
 end
 
+-- Autosave plugin config
+local autosave = require('autosave')
+autosave.setup({
+  enabled = true,
+  execution_message = 'AutoSave: saved at ' .. vim.fn.strftime('%H:%M:%S'),
+  events = {'InsertLeave', 'TextChanged'},
+  conditions = {
+    exists = true,
+    filename_is_not = {},
+    filetype_is_not = {},
+    modifiable = true
+  },
+  write_all_buffers = false,
+  on_off_commands = true,
+  clean_command_line_interval = 0,
+  debounce_delay = 135
+})

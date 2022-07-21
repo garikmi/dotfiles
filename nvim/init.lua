@@ -1,12 +1,45 @@
+-- Nvim settings
 require('settings')
-require('colorscheme_config.rose_pine')
-require('staline_config')
-require('packer_config')
+
+-- Mappings
 require('mappings')
-require('lsp_config.language_servers')
-require('lsp_config.nvim_cmp')
+
+-- Plugin manager
+require('packer_config')
+
+-- Themes
+-- require('themes.rose_pine')
+require('themes.onedark')
+
+-- Sidebar file navigation
+require('tree_config')
+
+-- Comment lines
+require('comment_config')
+
+-- Hightlight TODOs
+require('todo_config')
+
+-- Autosave document
+require('autosave_config')
+
+-- Status lines
+require('staline_config')
+
+-- Code highlighting
 require('treesitter_config')
-require('nvim_tree_config')
-require('nvim_comment_config')
-require('vimtex_config')
-require('todo_comments_config')
+
+-- Nvim LSP
+require('lsp_config.lsp_installer')
+require('lsp_config.lsp_config')
+require('lsp_config.autocompletion_and_snippets')
+
+-- Debugging
+require('dap_config.dapui')
+require('dap_config.languages')
+require('dap_config.virtual_text')
+require('dap_config.extensions')
+
+-- Bufferline
+require('bufferline_config')
+
