@@ -41,8 +41,8 @@ vim.keymap.set('n', '<leader>br', ":lua require'dap'.repl.open()<CR>")
 
 -- Bufferline
 -- Navigation
-vim.keymap.set('n', '[b', ':BufferLineCycleNext<CR>')
-vim.keymap.set('n', ']b', ':BufferLineCyclePrev<CR>')
+vim.keymap.set('n', 'L', ':BufferLineCycleNext<CR>')
+vim.keymap.set('n', 'H', ':BufferLineCyclePrev<CR>')
 
 -- Move
 -- vim.keymap.set('n', '', ':BufferLineMoveNext<CR>')
