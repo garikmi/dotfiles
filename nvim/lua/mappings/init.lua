@@ -40,9 +40,10 @@ vim.keymap.set('n', '<leader>bx', ":lua require'dap'.clear_breakpoints()<CR>")
 vim.keymap.set('n', '<leader>br', ":lua require'dap'.repl.open()<CR>")
 
 -- Bufferline
--- Navigation
 vim.keymap.set('n', 'L', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', 'H', ':BufferLineCyclePrev<CR>')
+vim.keymap.set('n', 'XH', ':BufferLineCloseLeft<CR>')
+vim.keymap.set('n', 'XL', ':BufferLineCloseRight<CR>')
 
 -- Move
 -- vim.keymap.set('n', '', ':BufferLineMoveNext<CR>')
