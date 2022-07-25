@@ -11,7 +11,6 @@ require('packer').startup({function()
   use 'hrsh7th/cmp-nvim-lsp' -- Source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Code snippets
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-  use 'williamboman/nvim-lsp-installer' -- Install language servers through UI
   use 'onsails/lspkind-nvim' -- Vscode-like pictograms
 
   use "rafamadriz/friendly-snippets"
