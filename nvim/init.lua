@@ -9,6 +9,7 @@ require('packer_config')
 
 -- Themes
 require('themes.rose_pine')
+-- require('themes.nord')
 
 -- Sidebar file navigation
 require('tree_config')
@@ -29,6 +30,7 @@ require('staline_config')
 require('treesitter_config')
 
 -- Nvim LSP
+require('lsp_config.lsp_installer')
 require('lsp_config.lsp_config')
 require('lsp_config.autocompletion_and_snippets')
 
