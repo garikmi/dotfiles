@@ -39,6 +39,14 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
+-- Add rounded border to popups
+local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+  opts = opts or {}
+  opts.border = "rounded"
+  return orig_util_open_floating_preview(contents, syntax, opts, ...)
+end
+
 -- Setup servers
 require('lspconfig')['jdtls'].setup {
   on_attach = on_attach,
