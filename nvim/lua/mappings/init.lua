@@ -53,3 +53,6 @@ vim.keymap.set('n', 'XL', ':BufferLineCloseRight<CR>')
 -- vim.keymap.set('n', '', ':BufferLineSortByExtension<CR>')
 -- vim.keymap.set('n', '', ':BufferLineSortByDirectory<CR>')
 
+-- Treesitter playground
+vim.keymap.set('n', '<leader>t', ":TSHighlightCapturesUnderCursor<CR>")
+
