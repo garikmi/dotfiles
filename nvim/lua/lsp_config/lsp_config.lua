@@ -68,11 +68,11 @@ require('lspconfig')['tsserver'].setup {
   flags = lsp_flags,
   capabilities = capabilities,
 }
-require('lspconfig')['eslint'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
-}
+-- require('lspconfig')['eslint'].setup {
+--   on_attach = on_attach,
+--   flags = lsp_flags,
+--   capabilities = capabilities,
+-- }
 require('lspconfig')['html'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
@@ -100,7 +100,7 @@ require('lspconfig')['sumneko_lua'].setup {
       },
       diagnostics = {
         -- Get the language server to recognize the `vim` global
-        globals = {'vim'},
+        globals = { 'vim', 'use' },
       },
       workspace = {
         -- Make the server aware of Neovim runtime files
@@ -112,5 +112,10 @@ require('lspconfig')['sumneko_lua'].setup {
       },
     },
   },
+}
+require('lspconfig')['denols'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
 }
 

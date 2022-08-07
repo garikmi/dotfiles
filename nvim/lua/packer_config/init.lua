@@ -6,12 +6,13 @@ require('packer').startup({function()
   use 'jiangmiao/auto-pairs'
 
   -- LSP
-  use 'neovim/nvim-lspconfig'
+  use "neovim/nvim-lspconfig"
   use 'hrsh7th/nvim-cmp' -- Autocompletion
   use 'hrsh7th/cmp-nvim-lsp' -- Source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Code snippets
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'onsails/lspkind-nvim' -- Vscode-like pictograms
+  use 'williamboman/nvim-lsp-installer'
 
   use "rafamadriz/friendly-snippets"
 
@@ -20,13 +21,14 @@ require('packer').startup({function()
 
   -- Code highlight
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'nvim-treesitter/playground' -- show highlight groups
 
   -- Sidebar navigation
   use 'kyazdani42/nvim-tree.lua'
   use 'kyazdani42/nvim-web-devicons' -- icons
 
   -- Automatically save document
-  use 'Pocco81/AutoSave.nvim'
+  use { 'Pocco81/auto-save.nvim', branch='dev' }
 
   -- File searcher/browser
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
@@ -35,7 +37,9 @@ require('packer').startup({function()
   use 'terrortylor/nvim-comment'
 
   -- Themes
+  use 'rktjmp/lush.nvim'
   use 'rose-pine/neovim'
+  use '/Users/igorkolokolnikov/Downloads/my_theme'
   use 'navarasu/onedark.nvim'
 
   -- Status line

@@ -2,8 +2,11 @@
 alias vim="nvim"
 alias vi="nvim"
 
-# laungh bat on cat
+# launch bat on cat
 alias cat="bat"
+
+# launc lsd on ls
+alias ls=lsd
 
 # Activate vim mode.
 bindkey -v
