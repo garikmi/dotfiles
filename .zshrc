@@ -1,36 +1,32 @@
-# lunch nvim with vim or vi
-alias vim="nvim"
-alias vi="nvim"
+# custom prompt
+PS1="garik → %1~ %# "
+
+# zap
+[ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
+
+# plugins
+plug "zdharma-continuum/fast-syntax-highlighting"
+plug "jeffreytse/zsh-vi-mode"
+plug "zsh-users/zsh-autosuggestions"
+plug "marlonrichert/zsh-autocomplete"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# lunch lvim with vim or vi
+alias vim="lvim"
+alias vi="lvim"
 
 # launch bat on cat
 alias cat="bat"
 
 # launc lsd on ls
-alias ls=lsd
+alias ls="lsd"
 
-# Activate vim mode.
-bindkey -v
+# kitty in-terminal image preview
+alias icat="kitty +kitten icat"
 
-
-# Plugins
-# Autodsuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Syntax highlighting
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Vim mode
-source ~/.zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
-
-# Remove mode switching delay.
-KEYTIMEOUT=5
-
-# Load user scripts
-export PATH=/usr/local/bin:$PATH
-
-# Load python scripts
-export PATH=$HOME/Library/Python/3.8/bin/:$PATH
-
-source "$HOME/.cargo/env"
-
+# exports
+export PATH=$HOME/Library/Python/3.9/bin/:$PATH
+export VISUAL="lvim"
+export EDITOR="lvim"
