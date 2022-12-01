@@ -10,9 +10,6 @@ plug "jeffreytse/zsh-vi-mode"
 plug "zsh-users/zsh-autosuggestions"
 plug "marlonrichert/zsh-autocomplete"
 
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # lunch lvim with vim or vi
 alias vim="lvim"
 alias vi="lvim"
@@ -22,6 +19,9 @@ alias cat="bat"
 
 # launc lsd on ls
 alias ls="lsd"
+
+# user double period to navigate back
+alias ..="cd .."
 
 # kitty in-terminal image preview
 alias icat="kitty +kitten icat"
