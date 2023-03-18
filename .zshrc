@@ -1,32 +1,23 @@
-# custom prompt
-PS1="garik → %1~ %# "
-
-# zap
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
 
-# plugins
+PS1=" %F{green}➜ %F{cyan}%1~%F{white} "
+
+export EDITOR=nvim
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+alias vi=nvim
+alias vim=nvim
+alias cat=bat
+alias ls=lsd
+
 plug "zdharma-continuum/fast-syntax-highlighting"
 plug "jeffreytse/zsh-vi-mode"
 plug "zsh-users/zsh-autosuggestions"
 plug "marlonrichert/zsh-autocomplete"
 
-# lunch lvim with vim or vi
-alias vim="lvim"
-alias vi="lvim"
+export PATH=$HOME/Library/Python/3.9/bin:$PATH
+export PATH=/Users/garik/.local/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
-# launch bat on cat
-alias cat="bat"
-
-# launc lsd on ls
-alias ls="lsd"
-
-# user double period to navigate back
-alias ..="cd .."
-
-# kitty in-terminal image preview
-alias icat="kitty +kitten icat"
-
-# exports
-export PATH=$HOME/Library/Python/3.9/bin/:$PATH
-export VISUAL="lvim"
-export EDITOR="lvim"
+eval "$(/opt/homebrew/bin/brew shellenv)"
