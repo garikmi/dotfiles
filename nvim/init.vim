@@ -11,4 +11,3 @@ colorscheme habamax
 set colorcolumn=80
 set relativenumber
 set clipboard=unnamedplus
-set guicursor=
