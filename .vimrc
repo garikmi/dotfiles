@@ -9,4 +9,3 @@ set noswapfile
 set hlsearch
 colorscheme habamax
 set colorcolumn=80
-set relativenumber
