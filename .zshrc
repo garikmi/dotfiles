@@ -14,5 +14,6 @@ export PATH=/Users/garik/.local/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/homebrew/opt/postgresql@15/bin:$PATH
+export PATH=$HOME/.cargo/env:$PATH
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
