@@ -6,6 +6,7 @@ PS1="%F{white}[🍏 %F{green}➜ %F{cyan}%1~%F{white}] "
 alias vim=nvim
 alias vi=nvim
 alias ls="ls --color"
+alias grep="grep --colour"
 
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
