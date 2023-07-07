@@ -8,6 +8,7 @@ alias vi=nvim
 alias ls="ls --color"
 
 plug "zsh-users/zsh-autosuggestions"
+plug "zsh-users/zsh-syntax-highlighting"
 
 export PATH=$HOME/Library/Python/3.9/bin:$PATH
 export PATH=/Users/garik/.local/bin:$PATH
@@ -17,3 +18,16 @@ export PATH=/opt/homebrew/opt/postgresql@15/bin:$PATH
 export PATH=$HOME/.cargo/env:$PATH
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# navigation complition with tab
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit -i
+_comp_options+=(globdots)
+
+# navigate complition menu with vim keys
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
