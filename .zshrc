@@ -3,7 +3,8 @@ PS1="%F{white}[🍏 %F{green}➜ %F{cyan}%1~%F{white}] "
 # Aliases.
 alias vim=nvim
 alias vi=nvim
-alias ls="ls --color"
+alias ls="lsd"
+alias cat="bat"
 alias grep="grep --colour"
 
 # Basic auto/tab complete:
