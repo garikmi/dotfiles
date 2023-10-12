@@ -1,3 +1,4 @@
+-- Editor
 set = vim.opt
 set.termguicolors = true
 set.writebackup = false
@@ -21,5 +22,14 @@ set.timeoutlen = 1000
 set.ttimeoutlen = 0
 set.laststatus = 3 -- global status line
 set.clipboard = 'unnamed'
+vim.opt.colorcolumn = "79"
+vim.wo.relativenumber = true
+
+-- Barbar
+vim.g.barbar_auto_setup = false
+require'barbar'.setup {
+  animation = false,
+}
+
 -- Nvim Tree
 require("nvim-tree").setup()
