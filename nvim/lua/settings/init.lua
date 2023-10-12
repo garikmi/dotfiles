@@ -21,3 +21,5 @@ set.timeoutlen = 1000
 set.ttimeoutlen = 0
 set.laststatus = 3 -- global status line
 set.clipboard = 'unnamed'
+-- Nvim Tree
+require("nvim-tree").setup()

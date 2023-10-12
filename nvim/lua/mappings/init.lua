@@ -2,7 +2,7 @@
 vim.g.mapleader = ' '
 
 -- Neo Tree
-vim.keymap.set('n', '<leader>e', ':NeoTreeFocusToggle<CR>')
+vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 
 -- Barbar
 vim.keymap.set('n', '<leader>bb', ':BufferPrevious<CR>')

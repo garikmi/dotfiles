@@ -8,4 +8,4 @@ require('mappings')
 require('packer_config')
 
 -- Theme
-require('themes.rose_pine')
+require('themes.catppuccin')
