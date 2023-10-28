@@ -22,7 +22,7 @@ set.timeoutlen = 1000
 set.ttimeoutlen = 0
 set.laststatus = 3 -- global status line
 set.clipboard = 'unnamed'
-vim.opt.colorcolumn = "79"
+vim.opt.colorcolumn = '75'
 vim.wo.relativenumber = true
 
 -- Barbar
@@ -32,4 +32,7 @@ require'barbar'.setup {
 }
 
 -- Nvim Tree
-require("nvim-tree").setup()
+require('nvim-tree').setup()
+
+-- Leap
+require('leap').add_default_mappings()
