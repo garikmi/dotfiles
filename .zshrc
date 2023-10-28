@@ -1,11 +1,12 @@
-PS1="%F{white}[🍏 %F{green}➜ %F{cyan}%1~%F{white}] "
+PS1="%F{white}[%n %F{green}➜ %F{cyan}%1~%F{white}] "
 
 # Aliases.
-alias vim=nvim
-alias vi=nvim
+alias vi="nvim"
+alias vim="nvim"
+# alias ls="ls -G"
 alias ls="lsd"
 alias cat="bat"
-alias grep="grep --colour"
+alias grep="grep --colour -i"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -26,6 +27,8 @@ export KEYTIMEOUT=1
 
 # Paths.
 export PATH=/usr/local/bin:$PATH
+
+export EDITOR=vim
 
 # Plugins.
 source $HOME/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2> /dev/null
