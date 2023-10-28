@@ -1,11 +1,14 @@
+-- Plugin manager
+require('lazy_nvim')
+
 -- Settings
 require('settings')
 
 -- Mappings
 require('mappings')
 
--- Plugin manager
-require('packer_config')
+-- Configure plugins
+require('plug_conf')
 
 -- Theme
 require('themes.catppuccin')

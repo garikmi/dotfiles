@@ -10,29 +10,17 @@ set.shiftwidth = 4
 set.softtabstop = 4
 set.autoindent = true
 set.smarttab = true
-set.mouse = 'a'
+set.mouse = "a"
 set.wrap = true
 set.cursorline = true
 set.scrolloff = 5
-set.fileencoding = 'utf-8'
+set.fileencoding = "utf-8"
 set.hidden = true
 set.ignorecase = true
 set.incsearch = true
 set.timeoutlen = 1000
 set.ttimeoutlen = 0
 set.laststatus = 3 -- global status line
-set.clipboard = 'unnamed'
-vim.opt.colorcolumn = '75'
+set.clipboard = "unnamed"
+vim.opt.colorcolumn = "75"
 vim.wo.relativenumber = true
-
--- Barbar
-vim.g.barbar_auto_setup = false
-require'barbar'.setup {
-  animation = false,
-}
-
--- Nvim Tree
-require('nvim-tree').setup()
-
--- Leap
-require('leap').add_default_mappings()
