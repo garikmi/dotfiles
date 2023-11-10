@@ -34,3 +34,8 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
 
 ----------------------------------------------------------------------- Git
 require('gitsigns').setup()
+
+-------------------------------------------------------------------- Scopes
+require("ibl").setup {
+    scope = { enabled = false },
+}

@@ -19,6 +19,7 @@ require("lazy").setup({
     { "romgrk/barbar.nvim", dependencies = { "nvim-tree/nvim-web-devicons" },
         version = "^1.0.0" },
     { "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons"} },
+    { "lukas-reineke/indent-blankline.nvim" },
 
     { "nvim-treesitter/nvim-treesitter" },
     { "williamboman/mason.nvim" },
