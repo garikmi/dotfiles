@@ -31,3 +31,6 @@ require("mason-lspconfig").setup({
 })
 require("lspconfig").clangd.setup{}
 vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
+
+----------------------------------------------------------------------- Git
+require('gitsigns').setup()

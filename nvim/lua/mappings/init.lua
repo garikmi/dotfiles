@@ -1,5 +1,7 @@
---------------------------------------------------- Map leader key to space
+---------------------------------------------------------------------- Core
 vim.g.mapleader = " "
+vim.keymap.set("v", ">", ">:normal gv<CR>")
+vim.keymap.set("v", "<", "<:normal gv<CR>")
 
 ------------------------------------------------------------------ Neo Tree
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")

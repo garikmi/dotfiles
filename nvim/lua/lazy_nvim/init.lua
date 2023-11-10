@@ -20,11 +20,11 @@ require("lazy").setup({
         version = "^1.0.0" },
     { "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons"} },
 
----------------------------------------------------------- Treesitter & LSP
     { "nvim-treesitter/nvim-treesitter" },
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
     { "neovim/nvim-lspconfig" },
 
     { "mbbill/undotree" },
+    { "lewis6991/gitsigns.nvim" },
 })
