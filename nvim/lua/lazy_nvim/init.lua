@@ -18,7 +18,13 @@ require("lazy").setup({
     { "numToStr/Comment.nvim", opts = { }, lazy = false },
     { "romgrk/barbar.nvim", dependencies = { "nvim-tree/nvim-web-devicons" },
         version = "^1.0.0" },
-    { "ggandor/leap.nvim" },
-    { "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
     { "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons"} },
+
+---------------------------------------------------------- Treesitter & LSP
+    { "nvim-treesitter/nvim-treesitter" },
+    { "williamboman/mason.nvim" },
+    { "williamboman/mason-lspconfig.nvim" },
+    { "neovim/nvim-lspconfig" },
+
+    { "mbbill/undotree" },
 })
