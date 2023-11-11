@@ -21,6 +21,10 @@ require("lazy").setup({
     { "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons"} },
     { "lukas-reineke/indent-blankline.nvim" },
 
+    { "nvim-lualine/lualine.nvim" },
+
+    { "windwp/nvim-autopairs" },
+
     { "nvim-treesitter/nvim-treesitter" },
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },

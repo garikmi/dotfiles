@@ -13,7 +13,6 @@ set.mouse = "a"
 set.wrap = true
 set.cursorline = true
 set.scrolloff = 5
-set.fileencoding = "utf-8"
 set.hidden = true
 set.ignorecase = true
 set.incsearch = true

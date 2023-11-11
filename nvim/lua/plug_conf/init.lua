@@ -7,7 +7,7 @@ require"barbar".setup {
 ----------------------------------------------------------------- Nvim Tree
 require("nvim-tree").setup()
 
--- Treesitter
+---------------------------------------------------------------- Treesitter
 require'nvim-treesitter.configs'.setup {
     ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
 
@@ -39,3 +39,9 @@ require('gitsigns').setup()
 require("ibl").setup {
     scope = { enabled = false },
 }
+
+---------------------------------------------------------------- Statusline
+require('lualine').setup()
+
+---------------------------------------------------------------- Auto-pairs
+require("nvim-autopairs").setup()
