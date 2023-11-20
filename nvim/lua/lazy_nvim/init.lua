@@ -32,4 +32,6 @@ require("lazy").setup({
 
     { "mbbill/undotree" },
     { "lewis6991/gitsigns.nvim" },
+
+    { "LunarVim/bigfile.nvim", opts = { }, lazy = false },
 })

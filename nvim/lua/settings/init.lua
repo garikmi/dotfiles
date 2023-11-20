@@ -4,6 +4,7 @@ set.termguicolors = true
 set.writebackup = false
 set.swapfile = false
 set.expandtab = true
+set.textwidth = 75
 set.tabstop = 4
 set.shiftwidth = 4
 set.softtabstop = 4

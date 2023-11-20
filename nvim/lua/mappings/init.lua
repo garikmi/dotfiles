@@ -4,7 +4,8 @@ vim.keymap.set("v", ">", ">:normal gv<CR>")
 vim.keymap.set("v", "<", "<:normal gv<CR>")
 
 ------------------------------------------------------------------ Neo Tree
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+local nvimTree = require "nvim-tree.api"
+vim.keymap.set("n", "<leader>e", nvimTree.tree.toggle)
 
 -------------------------------------------------------------------- Barbar
 vim.keymap.set("n", "<leader>bb", ":BufferPrevious<CR>")

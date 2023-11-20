@@ -45,3 +45,13 @@ require('lualine').setup()
 
 ---------------------------------------------------------------- Auto-pairs
 require("nvim-autopairs").setup()
+
+------------------------------------------------------------------- Bigfile
+require("bigfile").setup {
+  filesize = 2,
+  features = {
+    "indent_blankline",
+    "lsp",
+    "treesitter",
+  },
+}
