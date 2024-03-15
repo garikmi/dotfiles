@@ -1,6 +1,13 @@
-" filetype plugin indent on
+filetype plugin indent on
 syntax on
-colorscheme habamax
+
+" colorscheme habamax
+" colorscheme slate
+
+colorscheme retrobox
+" colorscheme wildcharm
+" colorscheme sorbet
+" colorscheme lunaperche
 
 set nobackup nowritebackup
 set noswapfile
@@ -12,7 +19,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-" set autoindent
+set autoindent
 set smarttab
 
 set mouse=a
@@ -31,3 +38,5 @@ set timeoutlen=1000
 set ttimeoutlen=0
 set clipboard=unnamed 
 set colorcolumn=75
+
+" set backspace=indent,eol,start
