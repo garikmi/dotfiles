@@ -1,10 +1,9 @@
 filetype plugin indent on
 syntax on
 
-" colorscheme habamax
+colorscheme habamax
 " colorscheme slate
-
-colorscheme retrobox
+" colorscheme retrobox
 " colorscheme wildcharm
 " colorscheme sorbet
 " colorscheme lunaperche
@@ -31,12 +30,23 @@ set ignorecase
 set hlsearch
 
 set wrap
-set hidden
-set wildmenu
 set incsearch
 set timeoutlen=1000
 set ttimeoutlen=0
+set hidden
+set wildmenu
 set clipboard=unnamed 
 set colorcolumn=75
 
 " set backspace=indent,eol,start
+
+:vnoremap > >:normal gv<CR>
+:vnoremap < <:normal gv<CR>
+
+:vnoremap J :m '>+1<CR>gv=gv
+:vnoremap K :m '>-2<CR>gv=gv
+
+:nnoremap H :bnext<CR>zz
+:nnoremap L :bprev<CR>zz
+
+:nnoremap E :Lex<CR>:vertical resize 50<CR>
