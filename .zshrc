@@ -1,36 +1,21 @@
-PS1="%F{white}[%n %F{green}➜ %F{cyan}%1~%F{white}] "
+PS1="%n %1~ %# "
 
-# Aliases.
-alias vi="nvim"
-alias vim="nvim"
-# alias ls="ls -G"
-alias ls="lsd"
-alias cat="bat"
-alias grep="grep --colour -i"
+bindkey -v
+bindkey "^?" backward-delete-char
+bindkey ^R history-incremental-search-backward 
+bindkey ^S history-incremental-search-forward
+KEYTIMEOUT=1
 
-# Basic auto/tab complete:
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)
+alias ls="ls -GF"
+alias grep="grep --colour"
 
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
+alias pi="ssh pi@raspberry"
+alias aws="ssh admin@54.71.118.239"
 
-# VI mode.
-export KEYTIMEOUT=1
+alias pf="fzf --preview='less {}' --bind shift-up:preview-page-up,shift-down:preview-page-down"
 
-# Paths.
-export PATH=/usr/local/bin:$PATH
+bindkey -s '^e' 'vim $(fzf --preview="less {}" --bind shift-up:preview-page-up,shift-down:preview-page-down)\n'
 
-export EDITOR=vim
-
-# Plugins.
-source $HOME/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2> /dev/null
-source $HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2> /dev/null
-source $HOME/.zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh 2> /dev/null
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+export EDITOR="vim"
