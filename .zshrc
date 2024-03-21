@@ -1,4 +1,5 @@
-PS1="%n %1~ %# "
+POSTEDIT=$'\e[0m\e[K'
+PS1='%K{237}%n@%m %~%# '
 
 bindkey -v
 bindkey "^?" backward-delete-char
