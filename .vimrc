@@ -40,11 +40,13 @@ set colorcolumn=75
 
 " set backspace=indent,eol,start
 
+:nnoremap <silent> K <Nop>
+
 :vnoremap > >:normal gv<CR>
 :vnoremap < <:normal gv<CR>
 
 :vnoremap J :m '>+1<CR>gv=gv
-:vnoremap K :m '>-2<CR>gv=gv
+:vnoremap K :m '<-2<CR>gv=gv
 
 :nnoremap H :bnext<CR>zz
 :nnoremap L :bprev<CR>zz
