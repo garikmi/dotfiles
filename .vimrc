@@ -51,7 +51,7 @@ set colorcolumn=75
 :nnoremap H :bnext<CR>zz
 :nnoremap L :bprev<CR>zz
 
-:nnoremap E :Lex<CR>:vertical resize 50<CR>
+:nnoremap E :Lex<CR>:vertical resize 30<CR>
 
 " Align regex
 command! -nargs=? -range Align <line1>,<line2>call AlignSection('<args>')
