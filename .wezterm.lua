@@ -9,11 +9,12 @@ end
 
 -- Theme
 config.color_scheme = 'Catppuccin Mocha'
-config.color_scheme = 'kanagawabones'
+-- config.color_scheme = 'OneDark (base16)'
+-- config.color_scheme = 'tokyonight_night'
 
 -- Font
-config.font = wezterm.font 'IosevkaTerm Nerd Font Mono'
-config.font_size = 13
+config.font = wezterm.font 'Iosevka Term'
+config.font_size = 15
 
 -- General
 config.window_decorations = "RESIZE"
@@ -23,37 +24,6 @@ config.use_fancy_tab_bar = false
 config.scrollback_lines = 4000
 config.tab_max_width = 25
 
--- Tabs
-config.colors = {
-    scrollbar_thumb = "#313244",
-    tab_bar = {
-        background = '#11111b',
-        active_tab = {
-            bg_color = '#313244',
-            fg_color = '#cdd6f4',
-            intensity = 'Normal',
-            underline = 'None',
-            italic = true,
-            strikethrough = false,
-        },
-        inactive_tab = {
-            bg_color = '#1e1e2e',
-            fg_color = '#6c7086',
-        },
-        inactive_tab_hover = {
-            bg_color = '#45475a',
-            fg_color = '#cdd6f4',
-        },
-        new_tab = {
-            bg_color = '#45475a',
-            fg_color = '#cdd6f4',
-        },
-        new_tab_hover = {
-            bg_color = '#585b70',
-            fg_color = '#cdd6f4',
-        },
-    },
-}
 
 -- Tabs
 function tab_title(tab_info)
@@ -81,6 +51,12 @@ config.keys = {
         key = 'k',
         mods = 'CMD',
         action = act.ClearScrollback 'ScrollbackAndViewport',
+    },
+    {
+        key = '{', mods = 'SHIFT|ALT', action = act.MoveTabRelative(-1)
+    },
+    {
+        key = '}', mods = 'SHIFT|ALT', action = act.MoveTabRelative(1)
     },
     {
         key = 'H',
