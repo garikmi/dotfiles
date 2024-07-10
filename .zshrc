@@ -1,19 +1,7 @@
 autoload -U colors && colors
 PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 
-# bindkey -e
-bindkey -v
-KEYTIMEOUT=1
-bindkey "^D" delete-char
-bindkey "^H" backward-delete-char
-bindkey "^F" forward-char
-bindkey "^B" backward-char
-bindkey "^A" beginning-of-line
-bindkey "^E" end-of-line
-bindkey "^K" kill-word
-bindkey "^?" backward-delete-char
-bindkey ^R history-incremental-search-backward
-bindkey ^S history-incremental-search-forward
+bindkey -e
 
 alias ls="ls -GF"
 alias grep="grep --colour"
